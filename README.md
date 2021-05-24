@@ -28,12 +28,13 @@ We would appreciate if you leave credit in your project or application when usin
 
 ## Credits:
 
-### Used APIs
-- [Fortnite-API](https://fortnite-api.com/) <img src="https://fortnite-api.com/assets/img/logo.png" width="30" title="Fortnite-API">
-- [NiteStats API](https://nitestats.com/) <img src="https://api.nitestats.com/v1/static/ns-logo.png" width="30" title="Nitestats-API">
-
 ### Inspirations
 - [Neonite](https://github.com/NeoniteDev)
+
+
+### APIs used in the backend
+- [Fortnite-API](https://fortnite-api.com/)
+- [NiteStats API](https://nitestats.com/)
 
 
 ## License:
