@@ -36,6 +36,5 @@ We would appreciate if you leave credit in your project or application when usin
 - [Fortnite-API](https://fortnite-api.com/)
 - [NiteStats API](https://nitestats.com/)
 
-
 ## License:
 By downloading this, you agree to the Commons Clause license and that you're not allowed to sell this repository or any code from this repository. For more info see https://commonsclause.com/.
