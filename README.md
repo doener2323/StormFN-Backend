@@ -30,6 +30,7 @@ We would appreciate if you leave credit in your project or application when usin
 
 ### Inspirations
 - [Neonite](https://github.com/NeoniteDev)
+- Aurora
 
 
 ### APIs used in the backend
