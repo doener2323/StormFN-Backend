@@ -1,0 +1,43 @@
+{
+    "Character": {
+        "ID": "CID_028_Athena_Commando_F",
+        "Variants": [{"variants": []}]
+    },
+    "Backpack": {
+        "ID": "BID_004_BlackKnight",
+        "Variants": [{"variants": []}]
+    },
+    "Glider": {
+        "ID": "Glider_Warthog",
+        "Variants": [{"variants": []}]
+    },
+    "Pickaxe": {
+        "ID": "Pickaxe_Lockjaw",
+        "Variants": [{"variants": []}]
+    },
+    "SkyDiveContrail": {
+        "ID": null,
+        "Variants": [{"variants": []}]
+    },
+    "Dance": {
+        "ID": [null, null, null, null, null],
+        "Variants": [{"variants": []}, {"variants": []}, {"variants": []}, {"variants": []}, {"variants": []}]
+    },
+    "ItemWrap": {
+        "ID": [null, null, null, null, null],
+        "Variants": [{"variants": []}, {"variants": []}, {"variants": []}, {"variants": []}, {"variants": []}]
+    },
+    "MusicPack": {
+        "ID": null,
+        "Variants": [{"variants": []}]
+    }, 
+    "LoadingScreen": {
+        "ID": null,
+        "Variants": [{"variants": []}]
+    },
+    "BannerIconTemplate": null,
+    "BannerColorTemplate": null,
+    "vbucks": 69,
+    "level": 69,
+    "favorites": {}
+}
