@@ -272,8 +272,12 @@ app.post(
                 res.json(createResponse([{
                     'changeType': 'statModified',
                     'name': 'current_mtx_platform',
-                    'value': req.body.platform || 'EpicPC'
+                    'value': req.body.platform
                 }], profileId, rvn));
+                break;
+
+            case 'VerifyRealMoneyPurchase':
+                res.json(createResponse(createCommonCore(config, accountId, profile)));
                 break;
 
             case 'SetItemFavoriteStatusBatch':

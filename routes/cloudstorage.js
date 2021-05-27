@@ -23,7 +23,7 @@ app.get('/fortnite/api/cloudstorage/system', (req, res) => {
 				doNotCache: false,
 			});
 		});
-	res.json(result);
+	res.json([]);
 });
 
 app.get('/fortnite/api/cloudstorage/system/config', (req, res) => {

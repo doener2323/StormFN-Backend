@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const axios = require("axios");
 
 app.get(['/fortnite/api/v2/versioncheck/:ver', '/fortnite/api/versioncheck/:ver'], (req, res) => {
 	res.json({

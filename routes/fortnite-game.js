@@ -1,3 +1,5 @@
+//credit to neonite for json data cuz im so gay to make my own
+
 const express = require('express')
 const app = express()
 const config = require('../config');
@@ -9,16 +11,45 @@ app.get('/content/api/pages/fortnite-game', async (req, res) => {
     const banner = config.banner;
     const background = config.background;
 
-    var response = {
-        'jcr:isCheckedOut': data.data['jcr:isCheckedOut'] || true,
-        _title: 'Fortnite Game',
-        'jcr:baseVersion': data.data['jcr:baseVersion'] || 'a7ca237317f1e7883b3279-c38f-4aa7-a325-e099e4bf71e5',
-        _activeDate: data.data._activeDate || '2017-08-30T03:20:48.050Z',
-        lastModified: data.data.lastModified || new Date().toISOString(),
-        _locale: data.data._locale || 'en'
-    };
+    //response.battleroyalenewsv2 = {
+    //    news: {
+    //        motds: [
+    //            {
+    //                entryType: 'Text',
+    //                image: banner1920x1080,
+    //                tileImage: banner1024x512,
+    //                hidden: false,
+    //                videoMute: true,
+    //                tabTitleOverride: 'StormFN',
+    //                _type:  'CommonUI Simple Message MOTD',
+    //                title: 'StormFN',
+    //                body: 'A fortnite hybrid server.',
+    //                videoLoop: false,
+    //                videoStreamingEnabled: false,
+    //                videoAutoplay: false,
+    //                videoFullscreen: false,
+    //                sortingPriority: 0,
+    //                id: 'StormFN-News',
+    //                spotlight: false
+    //            }
+    //        ],
+    //        _type: 'Battle Royale News',
+    //    },
+    //    'jcr:isCheckedOut': data.data.battleroyalenews['jcr:isCheckedOut'] || true,
+    //    _title: 'battleroyalenews',
+    //    header: '',
+    //    style: 'None',
+    //    _noIndex: false,
+    //    alwaysShow: false,
+    //    'jcr:baseVersion': data.data.battleroyalenews['jcr:baseVersion'] || 'a7ca237317f1e7546d8fe7-0d7a-4312-9e37-a20f1c4333b0',
+    //    _activeDate: data.data.battleroyalenews._activeDate || '2020-01-21T14:00:00.000Z',
+    //    lastModified: data.data.battleroyalenews.lastModified || new Date().toISOString(),
+    //    _locale: data.data._locale || 'en'
+    //}
+    // THIS CAUSES CRASHING
+    // WE ARE NOT SURE WHY, BUT CHANGING THE ASPECT RATIO OF THE IMAGE/BANNER TO 1920x1080 AND 1024x512 CAUSES CRASHING
 
-    response.emergencynoticev2 = {
+    data.data.emergencynoticev2 = {
         'jcr:isCheckedOut': data.data.emergencynoticev2['jcr:isCheckedOut'] || true,
         _title: data.data.emergencynoticev2._title || 'emergencynoticev2',
         _noIndex: data.data.emergencynoticev2._noIndex || false,
@@ -29,8 +60,8 @@ app.get('/content/api/pages/fortnite-game', async (req, res) => {
                 {
                     hidden: false,
                     _type: 'CommonUI Emergency Notice Base',
-                    title: 'Storm',
-                    body: 'Storm is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Epic Games.',
+                    title: 'Storm Update',
+                    body: 'You can now change your level and vbucks, using the bot in our discord server, have fun using Storm!',
                 }
             ]
         },
@@ -39,10 +70,10 @@ app.get('/content/api/pages/fortnite-game', async (req, res) => {
         _locale: data.data.emergencynoticev2._locale || 'en-US',
     }
 
-    response.subscription = data.data.subscription;
-    response.shopSections = data.data.shopSections;
+    data.data.subscription = data.data.subscription;
+    data.data.shopSections = data.data.shopSections;
 
-    response.battleroyalenewsv2 = {
+    data.data.battleroyalenewsv2 = {
         news: {
             motds: [{
                 entryType: 'Website',
@@ -53,7 +84,7 @@ app.get('/content/api/pages/fortnite-game', async (req, res) => {
                 tabTitleOverride: 'Storm',
                 _type: 'CommonUI Simple Message MOTD',
                 title: 'Storm',
-                body: 'Welcome to Storm',
+                body: 'Storm is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Epic Games.',
                 videoLoop: false,
                 videoStreamingEnabled: false,
                 sortingPriority: 0,
@@ -75,17 +106,17 @@ app.get('/content/api/pages/fortnite-game', async (req, res) => {
         _locale: data.data._locale || 'en-US'
     };
 
-    response.dynamicbackgrounds = {
+    data.data.dynamicbackgrounds = {
         'jcr:isCheckedOut': data.data.dynamicbackgrounds['jcr:isCheckedOut'] || true,
         backgrounds: {
             backgrounds: [
                 {
-                    stage: background,
+                    stage: 'winter19',
                     _type: 'DynamicBackground',
                     key: 'lobby'
                 },
                 {
-                    stage: background,
+                    stage: 'winter19',
                     _type: 'DynamicBackground',
                     key: 'vault'
                 }
