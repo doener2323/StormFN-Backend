@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const crypto = require('crypto');
+const path = require('path');
 const config = require('../config');
 
 // INSPIRED BY AURORAFN & NEONITE
@@ -23,7 +24,7 @@ app.get('/fortnite/api/cloudstorage/system', (req, res) => {
 				doNotCache: false,
 			});
 		});
-	res.json([]);
+	res.json(result);
 });
 
 app.get('/fortnite/api/cloudstorage/system/config', (req, res) => {
