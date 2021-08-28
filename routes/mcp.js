@@ -184,9 +184,9 @@ function createAthena(config, accountId, profile) {
 
     var items = profile.items;
 
-    for (var item of config.favorites) {
-        items[item["id"]].attributes.favorite = true;
-    };
+	for (var item of Object.keys(config.favorites)) {
+		items[item['id']].attributes.favorite = true;
+	}
 
     profile.items = items;
 
